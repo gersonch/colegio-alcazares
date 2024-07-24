@@ -1,0 +1,53 @@
+<header class="bg-green-900">
+    <div class="arriba flex justify-center md:justify-between max-w-6xl my-0 mx-auto py-4 items-center font-sans font-semibold px-5">
+        <div class="logo flex text-white items-center">
+            <img src="../image.png" width="80px" alt="logo oficial Colegio Alcázares de Ñuble">
+            <span class="flex flex-nowrap">Colegio Alcázares<br> de Ñuble</span>
+        </div>
+
+        <div class="contacto text-white md:flex items-center justify-evenly lg:justify-between hidden gap-20 text-center">
+            <div class="tel">
+                <span class="flex items-center gap-2"><ion-icon name="call-outline"></ion-icon> 42 2873116</span>
+                
+            </div>
+            <div class="mail ">
+                <span class="flex items-center gap-2"><ion-icon name="mail-outline"></ion-icon> alcazaresdenuble@gmail.com
+                </span>
+            </div>
+        </div>
+
+        <div class="rs text-2xl text-white md:flex hidden gap-4 ">
+            <div class="fb"><ion-icon name="logo-facebook"></ion-icon></div>
+            <div class="yt"><ion-icon name="logo-youtube"></ion-icon></div>
+        </div>
+    </div>
+</header>
+
+<nav class="flex justify-center py-4 relative">
+    <div class="abajo">
+        <div class="burger text-3xl cursor-pointer md:hidden"><ion-icon name="reorder-four-outline"></ion-icon></div>
+
+        <div class="nav absolute md:static w-full -left-[10000px] px-4 transition-all">
+            <ul class="flex flex-col md:flex-row py-2 px-4 :py-4 :px-2 gap-6 font-semibold md:text-md md:shadow-none shadow-sm shadow-neutral-950 shadow- rounded-r-sm flex-nowrap">
+                <li class="px-4 border-b border-black border-opacity-10 pb-1 md:border-none"><a href="#">Inicio</a></li>
+                <li class="px-4 border-b border-black border-opacity-10 pb-1 md:border-none"><a href="#">Nuestro Colegio</a></li>
+                <li class="px-4 border-b border-black border-opacity-10 pb-1 md:border-none"><a href="#">Documentos</a></li>
+                <li class="px-4 border-b border-black border-opacity-10 pb-1 md:border-none"><a href="#">Admisión</a></li>
+                <li class="px-4 border-b border-black border-opacity-10 pb-1 md:border-none"><a href="#">Talleres</a></li>
+                <li class="px-4 border-b border-black border-opacity-10 pb-1 md:border-none"><a href="#">Convivencia Escolar</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<script>
+    const burger = document.querySelector('.burger')
+    const nav = document.querySelector('.nav')
+
+    burger?.addEventListener('click', () => {
+        nav?.classList.toggle('left-[0]')
+    })
+</script>
+
+
