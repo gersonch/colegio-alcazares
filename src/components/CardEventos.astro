@@ -1,0 +1,21 @@
+---
+interface Props{
+    fecha: string
+    evento: string
+}
+const { fecha, evento } = Astro.props;
+---
+
+
+<div class="flex border border-black rounded-md border-opacity-25 justify-center w-[350px] md:w-[500px] text-center items-center">
+    <div>
+        <div class="fecha px-7 py-5 my-4 w-[150px] md:w-[200px] flex items-center">{fecha}</div>
+    </div>
+    <div>
+        <div class="evento px-7 py-5 my-4 border-l border-black border-opacity-25 w-[350] md:w-[300px]">{evento}</div>
+    </div>
+</div>
+
+
+
+
