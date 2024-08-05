@@ -1,53 +1,113 @@
 <header class="bg-green-900">
     <div class="arriba flex justify-center md:justify-between max-w-6xl my-0 mx-auto py-4 items-center font-sans font-semibold px-5">
-        <div class="logo flex text-white items-center">
-            <img src="../image.png" width="80px" alt="logo oficial Colegio Alcázares de Ñuble">
-            <span class="flex flex-nowrap">Colegio Alcázares<br> de Ñuble</span>
+        <div class="logo">
+            <a href="../" class="logo flex text-white items-center">
+                <img src="../image.png" width="70px" alt="logo oficial Colegio Alcázares de Ñuble">
+                <span class="flex flex-nowrap">Colegio Alcázares<br> de Ñuble</span>
+            </a>
         </div>
 
         <div class="contacto text-white md:flex items-center justify-evenly lg:justify-between hidden gap-20 text-center">
             <div class="tel">
-                <span class="flex items-center gap-2"><ion-icon name="call-outline"></ion-icon> 42 2873116</span>
+                <span class="flex items-center gap-2"><ion-icon name="call-outline"></ion-icon><a href="#"> 42 2873116</a></span>
                 
             </div>
             <div class="mail ">
-                <span class="flex items-center gap-2"><ion-icon name="mail-outline"></ion-icon> alcazaresdenuble@gmail.com
+                <span class="flex items-center gap-2"><ion-icon name="mail-outline"></ion-icon><a href="#"> alcazaresdenuble@gmail.com</a>
                 </span>
             </div>
         </div>
 
         <div class="rs text-2xl text-white md:flex hidden gap-4 ">
-            <div class="fb"><ion-icon name="logo-facebook"></ion-icon></div>
-            <div class="yt"><ion-icon name="logo-youtube"></ion-icon></div>
+            <div class="fb"><a href="#">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a></div>
+            <div class="yt"><a href="#">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a></div>
         </div>
     </div>
 </header>
 
-<nav class="flex justify-center py-4 relative">
-    <div class="abajo">
-        <div class="burger text-3xl cursor-pointer md:hidden"><ion-icon name="reorder-four-outline"></ion-icon></div>
+<nav class="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-center mx-auto p-4 z-50">
+      
+      <button data-collapse-toggle="navbar-multi-level" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-multi-level" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+          </svg>
+      </button>
 
-        <div class="nav absolute md:static w-full -left-[10000px] px-4 transition-all">
-            <ul class="flex flex-col md:flex-row py-2 px-4 :py-4 :px-2 gap-6 font-semibold md:text-md md:shadow-none shadow-sm shadow-neutral-950 shadow- rounded-r-sm flex-nowrap">
-                <li class="px-4 border-b border-black border-opacity-10 pb-1 md:border-none"><a href="#">Inicio</a></li>
-                <li class="px-4 border-b border-black border-opacity-10 pb-1 md:border-none"><a href="#">Nuestro Colegio</a></li>
-                <li class="px-4 border-b border-black border-opacity-10 pb-1 md:border-none"><a href="#">Documentos</a></li>
-                <li class="px-4 border-b border-black border-opacity-10 pb-1 md:border-none"><a href="#">Admisión</a></li>
-                <li class="px-4 border-b border-black border-opacity-10 pb-1 md:border-none"><a href="#">Talleres</a></li>
-                <li class="px-4 border-b border-black border-opacity-10 pb-1 md:border-none"><a href="#">Convivencia Escolar</a></li>
-            </ul>
-        </div>
+      <div class="hidden w-full md:block md:w-auto" id="navbar-multi-level">
+        <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <li>
+            <a href="#" class="block py-2 px-3 text-black rounded md:bg-transparent  md:p-0" aria-current="page">Inicio</a>
+          </li>
+          <li>
+              <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="z-50 flex items-center justify-between w-full py-2 px-3 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent">
+                Nuestro Colegio<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                                </svg>
+            </button>
+
+              <!-- Dropdown menu -->
+              <div id="dropdownNavbar" class="z-50 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                  <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownLargeButton">
+                    <li>
+                      <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dirección</a>
+                    </li>
+                    <li aria-labelledby="dropdownNavbarLink">
+                      <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown" data-dropdown-placement="right-start" type="button" class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Equipo Técnico</button>
+                      
+                    </li>
+                    <li>
+                      <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Visión Institucional</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Misión Institucional</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sellos Educativos</a>
+                    </li>
+                  </ul>
+                  
+              </div>
+              <li>
+                <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar2" class="z-50 flex items-center justify-between w-full py-2 px-3 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Reglamento<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                </svg></button>
+  
+                <!-- Dropdown menu -->
+                <div id="dropdownNavbar2" class="z-50 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                    <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownLargeButton">
+                      <li>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Proyecto educativo</a>
+                      </li>
+                      
+                      <li>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Reglamento de Convivencia Escolar</a>
+                      </li>
+                    </ul>
+                    
+                </div>
+
+
+          </li>
+          <li>
+            <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Admisión</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Talleres</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Jardín Alcazaritos</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Convivencia Escolar</a>
+          </li>
+        </ul>
+      </div>
     </div>
-</nav>
-
-
-<script>
-    const burger = document.querySelector('.burger')
-    const nav = document.querySelector('.nav')
-
-    burger?.addEventListener('click', () => {
-        nav?.classList.toggle('left-[0]')
-    })
-</script>
-
-
+  </nav>
+  
