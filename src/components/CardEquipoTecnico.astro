@@ -1,0 +1,41 @@
+---
+interface Props{
+    url: string
+    name: string
+    cargo: string
+}
+
+const { url, name, cargo } = Astro.props
+---
+
+
+<div class="card opacity-0 scale-90 flex flex-col w-80 text-center items-center shadow-lg shadow-[rgba(0,0,0,0.3)] p-4 rounded-lg transition duration-1000 cursor-pointer mx-4">
+    <header>
+        <img src={url} alt="imagen perfil utp" width="300" class="rounded-sm">
+    </header>
+    <footer class="p-4">
+        <h2 class="font-bold text-xl text-nowrap">{name}</h2>
+        <span class="text-black text-md text-opacity-55">{cargo}</span>
+    </footer>
+
+</div>
+
+
+<script>
+
+
+    const card = document.querySelectorAll('.card');
+
+    window.addEventListener('load', () => {
+        card.forEach((card) => {
+            if (card?.classList.contains('opacity-0' && 'scale-90')) {
+            setTimeout(() => {
+                card.classList.add('opacity-100');
+                card.classList.add('scale-100');
+            }, 200);
+        }
+        })
+        
+    });
+
+</script>
