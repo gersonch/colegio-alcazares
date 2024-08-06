@@ -9,7 +9,7 @@ const { url, name, cargo } = Astro.props
 ---
 
 
-<div class="card opacity-0 scale-90 flex flex-col w-80 text-center items-center shadow-lg shadow-[rgba(0,0,0,0.3)] p-4 rounded-lg transition duration-1000 cursor-pointer mx-4">
+<div class="card opacity-0 scale-90 flex flex-col w-80 text-center items-center shadow-lg shadow-[rgba(0,0,0,0.3)] p-4 rounded-lg transition duration-1000 cursor-pointer mx-4 hover:scale-110 hover:transition hover:duration-200">
     <header>
         <img src={url} alt="imagen perfil utp" width="300" class="rounded-sm">
     </header>
@@ -31,6 +31,7 @@ const { url, name, cargo } = Astro.props
             if (card?.classList.contains('opacity-0' && 'scale-90')) {
             setTimeout(() => {
                 card.classList.add('opacity-100');
+                card.classList.remove('scale-90');
                 card.classList.add('scale-100');
             }, 200);
         }
