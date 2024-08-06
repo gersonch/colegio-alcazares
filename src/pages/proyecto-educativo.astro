@@ -7,10 +7,30 @@ import Footer from "../components/Footer.astro"
 <Layout title="Proyecto Educativo - Colegio Alcázares de Ñuble">
     <Header />
    
-    <div class="container flex justify-center h-screen max-w-6xl mx-auto my-4 ">
-        <div>
-            <iframe class="shadow-md shadow-[rgba(0,0,0,0.5)]" src="https://drive.google.com/file/d/1SmzlGxMqmQ0pYcljLQgzgMehkizELa2y/preview" width="1000px" height="700px" allow="autoplay"></iframe>
+    <div class="container max-w-6xl mx-auto flex flex-col items-center lg:flex-row lg:justify-between mt-20 gap-x-16 gap-y-8 mb-40">
+        <div class="intro mx-8">
+            
+            <h2 class="text-5xl font-bold mb-16">Proyecto Educativo</h2>
+            <p class="max-w-[38rem]">El Proyecto Educativo Institucional del Colegio Alcázares de Ñuble de Chillán, es
+                    un documento elaborado con la participación de todos los estamentos de la comunidad
+                    educativa: Directivos, Administrativos, Docentes, Paradocentes, Alumnos, Apoderados, Equipo de Gestión, Centro de Estudiantes, Consejo Escolar y Centro General de Padres y
+                    Apoderados. <br> <br>Su elaboración está sujeta a un proceso de reflexión y búsqueda de
+                    consenso para obtener un marco global de referencia, recogiendo las características
+                    propias de la identidad y concretándose en la necesidad y el entorno social en el que
+                    está inmerso el colegio, lo que permitirá una actuación coordinada y eficaz del equipo
+                    docente y de la comunidad educativa.<br><br> El PEI nos sirve como una herramienta para estructurar todo el quehacer
+                    educativo en los aspectos académicos, valóricos y sociales. De esta manera, todas las
+                    acciones apuntarán al mejoramiento constante y la actualización de nuestras acciones
+                    educativas y así brindar un servicio de calidad vigente e inclusivo. Nuestro establecimiento es un Colegio Particular Subvencionado inclusivo con
+                    énfasis en una educación de calidad para todos sus estudiantes lo que conlleva a tener
+                    buenos resultados académicos y que entrega las herramientas necesarias para
+                    desarrollarse en una sociedad altamente competitiva.</p>
+            </div>
+            
+        <div class="docu mx-8">
+            <iframe src="https://drive.google.com/file/d/1SmzlGxMqmQ0pYcljLQgzgMehkizELa2y/preview" width="350" height="480" allow="autoplay"></iframe>
         </div>
+        
     </div>
     <Footer />
 </Layout>
