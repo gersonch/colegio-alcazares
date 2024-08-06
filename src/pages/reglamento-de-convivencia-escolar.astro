@@ -1,0 +1,20 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout title="Reglamento de Convivencia Escolar - Colegio Alcázares de Ñuble">
+    <Header />
+        <div class="max-w-5xl mx-auto my-10">
+            <a href="#" target="_blank"><span class="bg-blue-600 px-4 py-2 rounded-md text-white hover:bg-blue-700 transition">Enlace al Documento</span></a>
+        </div>
+        <div class="container flex justify-center h-screen max-w-6xl mx-auto my-4 ">
+            <embed src="../reglamento.pdf" width="1000px" height="700px" type="application/pdf"  class="shadow-[rgba(0,0,0,0.5)] shadow-md mx-4">
+        </div>
+
+
+    <Footer />
+
+
+</Layout>
