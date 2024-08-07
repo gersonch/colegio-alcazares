@@ -10,8 +10,12 @@ const { title } = Astro.props;
 <html lang="es">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
+		<meta name="description" content="Sitio web oficial - Colegio Alcazares de Ñuble" />
 		<meta name="viewport" content="width=device-width" />
+		<meta name="keywords" content="Colegio Alcázares de Ñuble, Educacion, Colegio, Educacion Parvularia, Chillan, Ñuble, Chile, Formando Futuras Fortalezas"/>
+		<meta name="copyright" content="Colegio Alcazares de Ñuble" />
+		<meta name="author" content="Gerson Contreras Henriquez"/>
+		<meta name="robots" content="index, follow" />
 		<link rel="icon" type="image/svg+xml" href="../image.png" />
 		<meta name="generator" content={Astro.generator} />
 		<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
@@ -19,9 +23,35 @@ const { title } = Astro.props;
 		
 		<title>{title}</title>
 	</head>
+
+	<!-- Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-5LPQW446WF"></script>
+	<script>
+		// Definir la interfaz de dataLayer para evitar errores de tipo
+		declare global {
+		interface Window {
+			dataLayer: any[];
+		}
+		}
+
+		window.dataLayer = window.dataLayer || [];
+		function gtag(...args: any[]) {
+		window.dataLayer.push(args);
+		}
+
+		// Inicializar Google Analytics
+		gtag('js', new Date());
+		gtag('config', 'G-5LPQW446WF');
+
+	</script>
+
 	<body class="bg-[#eee]">
 		<slot />
 
 		<script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
 	</body>
 </html>
+
+
+
+
