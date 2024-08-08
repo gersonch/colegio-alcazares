@@ -1,0 +1,31 @@
+---
+import Header from "../components/Header.astro";
+import Layout from "../layouts/Layout.astro";
+import Footer from "../components/Footer.astro";
+import Ruta from "../components/Ruta.astro";
+---
+
+<Layout title="Misión y Visión Institucional - Colegio Alcázares de Ñuble" description="Sellos Educativos - Colegio Alcázares de Ñuble">
+    <Header />
+    <Ruta route="../" preview="Inicio" actual="Sellos Educativos"/>
+    <div class="container flex items-center flex-col lg:flex-row max-w-6xl mx-auto gap-4 lg:justify-between mt-10 mb-32">
+        <div class="flex flex-col">
+            <div class="parrafo m-8 max-w-xl">
+                <h1 class="text-2xl lg:text-5xl font-bold mb-8 text-blue-800">Sellos Educativos</h1>
+                <p class="text-md lg:text-lg">•	Comunidad educativa inclusiva, capaz de aceptar la diversidad, con alumnos preparados para la continuidad de estudios superiores.
+                    <br><br>
+                    •	Profesores comprometidos con su quehacer docente.
+                    <br><br>
+                    •	Desarrollo de alumnos integrales con sólida formación académica y humana, con claros valores morales, éticos y sociales.
+                    <br><br>
+                    •	Alumnos comprometidos en el ámbito cultural, deportivo y artístico.
+                    
+            </div>
+        </div>
+        <div> 
+            <img src="../image.png" alt="logo Colegio Alcázares de ñuble z-40" class="w-[150px] lg:w-[350px]">
+        </div>
+    </div>
+
+    <Footer />
+</Layout>
