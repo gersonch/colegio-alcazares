@@ -1,0 +1,13 @@
+---
+interface Props{
+    preview: string
+    actual: string
+    route: string
+}
+const { preview, actual, route } = Astro.props
+---
+
+
+<div class="max-w-6xl flex mx-auto">
+    <div class="preview"><a class="underline" href={route}>{preview}</a> / <span class="actual text-[#aaa]">{actual}</span ></div>
+</div>

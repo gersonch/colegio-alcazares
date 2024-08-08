@@ -1,16 +1,17 @@
 ---
 interface Props {
 	title: string;
+	description: string
 }
 
-const { title } = Astro.props;
+const { title, description } = Astro.props;
 ---
 
 <!doctype html>
 <html lang="es">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="En Colegio Alcázares de Ñuble, nos dedicamos a formar futuras fortalezas en un gran ambiente educativo. Ofrecemos una educación integral, desarrollo personal y valores, además de variadas actividades extracurriculares que preparan a nuestros estudiantes para enfrentar los retos del futuro con confianza y habilidades." />
+		<meta name="description" content={description} />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="keywords" content="Colegio Alcázares de Ñuble, Educacion, Colegio, Educacion Parvularia, Chillan, Ñuble, Chile, Formando Futuras Fortalezas"/>
 		<meta name="copyright" content="Colegio Alcazares de Ñuble" />

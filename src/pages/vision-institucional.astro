@@ -1,0 +1,30 @@
+---
+import Header from "../components/Header.astro";
+import Layout from "../layouts/Layout.astro";
+import Footer from "../components/Footer.astro";
+import Ruta from "../components/Ruta.astro";
+---
+
+<Layout title="Visión Institucional - Colegio Alcázares de Ñuble" description="Formamos estudiantes que maximizan su potencial académico y personal, comprometidos con la sociedad y la excelencia, preparados para la educación superior.">
+    <Header />
+    <Ruta route="../" preview="Inicio" actual="Visión Institucional"/>
+    <div class="container flex items-center flex-col lg:flex-row max-w-6xl mx-auto gap-4 lg:justify-between mt-10 mb-20">
+        <div class="parrafo m-8 max-w-xl">
+            <h1 class="text-2xl lg:text-5xl font-bold mb-8 text-blue-800">Visión Institucional</h1>
+            <p class="text-md lg:text-lg">Nuestro anhelo se traduce en ser capaces de formar estudiantes que logren  potenciar al máximo sus capacidades académicas y personales, y que logren  involucrarse activamente en la sociedad que viven,  teniendo como base sólida un claro proyecto de vida.
+                <br><br>
+                Un estudiante que es capaz de dar siempre lo mejor de sí en el Ser, en el Saber y Saber Hacer, reconociendo que todo es posible en el querer las metas alcanzar.
+                <br><br>
+                Un estudiante que busca la excelencia académica, (medida por sus logros de rendimiento año tras año), que no evade la responsabilidad y el trabajo, sino los reconoce como valores esenciales en su vida escolar con una clara proyección hacia la educación superior.
+                <br><br>
+                Esta visión no será posible sin una misión clara y definida que concrete el sueño del colegio deseado.
+                </p>
+        </div>
+        <div class="img m-4 relative">  
+            <div ></div>
+            <img src="../image.png" alt="logo Colegio Alcázares de ñuble" class="w-[150px] lg:w-[350px]">
+        </div>
+    </div>
+
+    <Footer />
+</Layout>

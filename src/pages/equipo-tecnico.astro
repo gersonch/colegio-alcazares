@@ -3,10 +3,12 @@ import Layout from "../layouts/Layout.astro"
 import Header from "../components/Header.astro"
 import Footer from "../components/Footer.astro"
 import CardEquipoTecnico from "../components/CardEquipoTecnico.astro"
+import Ruta from "../components/Ruta.astro"
 ---
 
-<Layout title="Equipo Técnico - Colegio Alcázares de Ñuble">
+<Layout title="Equipo Técnico - Colegio Alcázares de Ñuble" description="Equipo Tecnico - Colegio Alcázares de Ñuble">
     <Header />
+    <Ruta route="../" preview="Inicio" actual="Equipo Técnico"/>
     <div class="flex justify-center my-10 ">
         <h1 class="text-2xl md:text-4xl font-bold">Conoce a nuestro equipo técnico</h1>
     </div>
