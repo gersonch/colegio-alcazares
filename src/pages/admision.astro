@@ -1,0 +1,34 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import Iframe from "../components/iframe.astro";
+---
+
+
+<Layout title="Admisión - Colegio Alcázares de Ñuble" description="Admisión">
+    <Header />
+    <header class="bg-[url(../bg-cloud.jpg)] bg-cover">
+        <div class="flex justify-center py-20">
+            <img src="https://www.sistemadeadmisionescolar.cl/css/img/2024/05/logo_sae_2025.svg" alt="" class="w-[300px]">
+        </div>
+        <div class="flex justify-end max-w-4xl mx-auto">
+            <a href="https://admision.mineduc.cl/registro/" target="_blank" class="bg-red-600 py-2 px-12 text-white font-semibold rounded-full mb-10 mx-4">Postula aquí</a>
+        </div>
+    </header>
+    <main class="mb-20">
+        <div class="flex justify-center py-5 ">
+            <h2 class="font-bold text-3xl">¿Como Postular?</h2>
+        </div>
+        <div class="videos max-w-6xl mx-auto my-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-20 gap-y-8 justify-items-center">
+            <Iframe url="https://www.youtube.com/embed/T5Bn3I7WzJI?si=mgpFVewz5apQub45"/>
+            <Iframe url="https://www.youtube.com/embed/beu4FjEJY2Y?si=lKcePmxls1Uo6M37"/>
+            <Iframe url="https://www.youtube.com/embed/khPtEbSDwYc?si=VN3xSwt0QklS_ppi"/>
+        </div>
+       
+    </main>
+
+
+    <Footer />
+
+</Layout>
