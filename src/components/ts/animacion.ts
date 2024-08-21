@@ -1,8 +1,11 @@
-const card = document.querySelectorAll(".card");
+const cards = document.querySelectorAll<HTMLDivElement>(".card");
 
 window.addEventListener("load", () => {
-  card.forEach((card) => {
-    if (card?.classList.contains("opacity-0" && "scale-90")) {
+  cards.forEach((card) => {
+    if (
+      card?.classList.contains("opacity-0") &&
+      card.classList.contains("scale-90")
+    ) {
       setTimeout(() => {
         card.classList.add("opacity-100");
         card.classList.remove("scale-90");
