@@ -17,10 +17,10 @@ function typeWriter(): void {
     if (index > 0) {
       textElement.textContent = text.slice(0, index - 1);
       index--;
-      setTimeout(typeWriter, 150);
+      setTimeout(typeWriter, 50);
     } else {
       forward = true;
-      setTimeout(typeWriter, 200); // Espera un segundo antes de reiniciar
+      setTimeout(typeWriter, 300); // Espera un segundo antes de reiniciar
     }
   }
 }

@@ -4,9 +4,19 @@ import ContentCarousel from "./ContentCarousel.astro";
 
 <div class="max-w-6xl mx-auto">
 
-	<div id="default-carousel" class="relative duration-[6000ms]" data-carousel="slide">
+	<div id="default-carousel" class="relative" data-carousel="slide">
      
         <div class="overflow-hidden relative rounded-sm h-[300px] lg:h-[500px] mx-2 shadow-[rgba(0,0,0,0.5)] shadow-md">
+
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="https://scontent.fscl38-1.fna.fbcdn.net/v/t39.30808-6/456442863_1232636561406005_611886475036027477_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEZ9w2nqRumogzi-MCwGf2296UeL3Y5E2L3pR4vdjkTYuEpS3E3IMkKJCh2uBNQkyw&_nc_ohc=g2xwPggy-dYQ7kNvgGBlgkM&_nc_zt=23&_nc_ht=scontent.fscl38-1.fna&oh=00_AYDWex0RPljCcRcz-TYnP71Z3gzAxBEad8O_FJDpQPgqig&oe=66D2C406" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="clasificatorio de cuecas de ACOPACH">
+
+                <div class="absolute bg-black bg-opacity-50 w-full h-full">
+                    <div class="texto-carousel absolute top-[50%] left-[50%] flex flex-col items-center text-white w-3/4 gap-2">
+                        <ContentCarousel h="Clasificatorio de cuecas de ACOPACH" p="A la actividad asistieron 3 parejas de enseñanza básica y 2 de enseñanza media. Agradecemos el compromiso y entusiasmo de estas parejas por representar a nuestro establecimiento y destacamos de forma especial a la pareja compuesta por Cristián Moya y Martina Ortiz de séptimo básico B." href="https://web.facebook.com/elalcazarino/posts/pfbid09pQid2kNWqkGZeitkw9CDGgxdsbRL9EMSdGJZAT9qAnbqxvvoPWVdTKJ5Uqjr2Xhl"/>
+                    </div>
+                </div>
+            </div>
 
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
                 <img src="../dianiño.jpg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="Entrega de las Antologías de las Experiencias de los Diarios de Escritura Libre (Convocatoria 2023)">
@@ -79,6 +89,7 @@ import ContentCarousel from "./ContentCarousel.astro";
             <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
             <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
             <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 6" data-carousel-slide-to="5"></button>
             
         </div>
        
