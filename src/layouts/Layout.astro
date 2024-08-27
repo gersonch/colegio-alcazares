@@ -29,27 +29,6 @@ const { title, description } = Astro.props;
 		<title>{title}</title>
 	</head>
 
-	<!-- Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-5LPQW446WF"></script>
-	<script>
-		// Definir la interfaz de dataLayer para evitar errores de tipo
-		declare global {
-		interface Window {
-			dataLayer: any[];
-		}
-		}
-
-		window.dataLayer = window.dataLayer || [];
-		function gtag(...args: any[]) {
-		window.dataLayer.push(args);
-		}
-
-		// Inicializar Google Analytics
-		gtag('js', new Date());
-		gtag('config', 'G-5LPQW446WF');
-
-	</script>
-
 	<body class="bg-[#eee]">
 		<slot />
 
