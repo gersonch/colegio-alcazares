@@ -1,5 +1,6 @@
 ---
 import ContentCarousel from "./ContentCarousel.astro";
+import { info1, info2, info3 } from "./info/datosCarousel";
 ---
 
 <div class="max-w-6xl mx-auto">
@@ -9,34 +10,36 @@ import ContentCarousel from "./ContentCarousel.astro";
         <div class="overflow-hidden relative rounded-sm h-[300px] lg:h-[500px] mx-2 shadow-[rgba(0,0,0,0.5)] shadow-md">
 
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="../acto-fiestas.webp" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="decoraciones por sala">
+                <img src=`${info1.img}` class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="decoraciones por sala">
 
                 <div class="absolute bg-black bg-opacity-50 w-full h-full">
                     <div class="texto-carousel absolute top-[50%] left-[50%] flex flex-col items-center text-white w-3/4 gap-2">
-                        <ContentCarousel h="Premiación Acto Fiestas Patrias" p="Se llevó a cabo la premiación por la decoración de salas, el conteo de huasos, y la elección de las parejas ganadoras del concurso de Cueca." href="https://www.flickr.com/photos/200544313@N07/albums/"/>
+                        <ContentCarousel h=`${info1.h}` p=`${info1.p}` href=`${info1.href}`/>
                     </div>
                 </div>
             </div>
 
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="../gala.webp" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="gala fiestas patrias">
+                <img src=`${info2.img}` class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="decoraciones por sala">
 
                 <div class="absolute bg-black bg-opacity-50 w-full h-full">
                     <div class="texto-carousel absolute top-[50%] left-[50%] flex flex-col items-center text-white w-3/4 gap-2">
-                        <ContentCarousel h="Gala Fiestas Patrias" p="Vivimos un hermoso momento en el que nuestros queridos alumnos nos deleitaron con sus bailes folclóricos." href="https://www.flickr.com/photos/200544313@N07/albums/72177720320559952"/>
+                        <ContentCarousel h=`${info2.h}` p=`${info2.p}` href=`${info2.href}`/>
                     </div>
                 </div>
             </div>
 
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="../juegos-tipicos.webp" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="juegos tipicos">
+                <img src=`${info3.img}` class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="decoraciones por sala">
 
                 <div class="absolute bg-black bg-opacity-50 w-full h-full">
                     <div class="texto-carousel absolute top-[50%] left-[50%] flex flex-col items-center text-white w-3/4 gap-2">
-                        <ContentCarousel h="Juegos Típicos" p="El dia Martes se llevaron a cabo los juegos típicos en nuestro establecimiento educativo." href="https://www.flickr.com/photos/200544313@N07/albums/72177720320285779/"/>
+                        <ContentCarousel h=`${info3.h}` p=`${info3.p}` href=`${info3.href}`/>
                     </div>
                 </div>
             </div>
+
+            
 
             
 
