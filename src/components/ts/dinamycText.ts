@@ -1,9 +1,11 @@
-const textElement = document.getElementById("text");
-const text = "¡Formando Futuras Fortalezas!";
-let index = 0;
-let forward = true;
+const textElement = document.getElementById("text") as HTMLElement | null;
+const text: string = "¡Formando Futuras Fortalezas!";
+let index: number = 0;
+let forward: boolean = true;
 
-function typeWriter() {
+function typeWriter(): void {
+  if (!textElement) return; // Verifica que textElement no sea nulo
+
   if (forward) {
     if (index < text.length) {
       textElement.textContent += text.charAt(index);
