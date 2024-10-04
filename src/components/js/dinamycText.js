@@ -1,9 +1,9 @@
-const textElement = document.getElementById("text") as HTMLElement;
-const text: string = "¡Formando Futuras Fortalezas!";
-let index: number = 0;
-let forward: boolean = true;
+const textElement = document.getElementById("text");
+const text = "¡Formando Futuras Fortalezas!";
+let index = 0;
+let forward = true;
 
-function typeWriter(): void {
+function typeWriter() {
   if (forward) {
     if (index < text.length) {
       textElement.textContent += text.charAt(index);
@@ -11,7 +11,7 @@ function typeWriter(): void {
       setTimeout(typeWriter, 150); // Ajusta la velocidad cambiando el valor
     } else {
       forward = false;
-      setTimeout(typeWriter, 5000); // Espera un segundo antes de borrar
+      setTimeout(typeWriter, 5000); // Espera 5 segundos antes de borrar
     }
   } else {
     if (index > 0) {
@@ -20,7 +20,7 @@ function typeWriter(): void {
       setTimeout(typeWriter, 50);
     } else {
       forward = true;
-      setTimeout(typeWriter, 300); // Espera un segundo antes de reiniciar
+      setTimeout(typeWriter, 300); // Espera 300 ms antes de reiniciar
     }
   }
 }

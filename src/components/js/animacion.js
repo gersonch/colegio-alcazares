@@ -1,4 +1,4 @@
-const cards = document.querySelectorAll<HTMLDivElement>(".card");
+const cards = document.querySelectorAll(".card");
 
 window.addEventListener("load", () => {
   cards.forEach((card) => {
