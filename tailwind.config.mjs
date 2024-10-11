@@ -6,7 +6,11 @@ export default {
   ],
 
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        pacifico: ['Pacifico', 'cursive'],
+      }
+    },
   },
   plugins: [require("flowbite/plugin")],
 };

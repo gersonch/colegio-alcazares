@@ -1,11 +1,18 @@
-<div class="typewriter flex justify-center mt-2 mb-5 md:my-14 text-2xl md:text-5xl h-10 items-center">
+<div class="typewriter font-pacifico flex justify-center mt-2 mb-5 md:my-14 text-2xl md:text-5xl h-10 items-center">
     <p id="text" class="pr-2"></p>
 </div>
 
 
 <style>
+    @font-face {
+    font-family: 'Pacifico';
+    src: url('/src/assets/fonts/Pacifico/Pacifico-Regular.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+
     .typewriter p {
-    font-family: "Pacifico", cursive;
     border-right: 4px solid #000; /* Cursor */
     white-space: nowrap;
     animation: blink-caret 1s step-end infinite;
