@@ -1,5 +1,11 @@
 export const carouselData = [
   {
+    h: "Actividades de Articulación kinder a Primero Básico",
+    p: "Hoy lunes 21 de octubre  Reconociendo el patio de educación básica junto a sus educadoras y asistentes.",
+    href: "https://www.flickr.com/photos/200544313@N07/albums/72177720321410534",
+    img: "/kinder.webp",
+  },
+  {
     h: "Dia de la Salud Mental",
     p: "Los estudiantes de segundo básico finalizaron la unidad sobre pueblos originarios creando maquetas que representaban aspectos clave de distintas culturas indígenas.  Durante el proceso, los niños demostraron gran creatividad y trabajo en equipo, investigando y aprendiendo sobre las costumbres y tradiciones de las comunidades.",
     href: "https://www.flickr.com/photos/200544313@N07/albums/72177720321284545/",
@@ -22,11 +28,5 @@ export const carouselData = [
     p: "El día de hoy 03 de octubre, se llevó  a cabo en nuestro Establecimiento el Simulacro Regional de Sismo, en donde se puso en práctica nuestro Plan Integral de Seguridad Escolar.",
     href: "https://www.flickr.com/photos/200544313@N07/albums/72177720320842366",
     img: "/sismo.webp",
-  },
-  {
-    h: "Premiación Acto Fiestas Patrias",
-    p: "Se llevó a cabo la premiación por la decoración de salas, el conteo de huasos, y la elección de las parejas ganadoras del concurso de Cueca.",
-    href: "https://www.flickr.com/photos/200544313@N07/albums/",
-    img: "/acto-fiestas.webp",
   },
 ];
