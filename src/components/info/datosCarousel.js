@@ -1,5 +1,11 @@
 export const carouselData = [
   {
+    h: "Actividad para el 3°A y 3°B",
+    p: "El objetivo de esta actividad para el 3°A y 3°B en la asignatura de Historia, Geografía y Ciencias Sociales a cargo de las profesoras Nicole Barriga González y Carolina Martínez Domarchi, fue plasmar fielmente construcciones y paisajes urbanos mostrando en escala menor el realismo romano y el cultivo del conocimiento con la apreciación del arte convertido en un objetivo digno de los logros de la antigua Roma.",
+    href: "https://www.flickr.com/photos/200544313@N07/albums/72177720321430659",
+    img: "/3ros.webp",
+  },
+  {
     h: "Actividades de Articulación kinder a Primero Básico",
     p: "Hoy lunes 21 de octubre  Reconociendo el patio de educación básica junto a sus educadoras y asistentes.",
     href: "https://www.flickr.com/photos/200544313@N07/albums/72177720321410534",
