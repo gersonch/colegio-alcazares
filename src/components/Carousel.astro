@@ -8,17 +8,19 @@ import { carouselData } from "./info/datosCarousel";
      
         <div class="overflow-hidden relative rounded-sm h-[300px] lg:h-[500px] mx-2 shadow-[rgba(0,0,0,0.5)] shadow-md" id="container">
             <!-- Iterar sobre los datos del carrusel -->
-            {carouselData.map((info) => (
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src={info.img} class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt={info.h}>
-                    
-                    <div class="absolute bg-black bg-opacity-50 w-full h-full">
-                        <div class="texto-carousel absolute top-[50%] left-[50%] flex flex-col items-center text-white w-3/4 gap-2">
-                            <ContentCarousel h={info.h} p={info.p} href={info.href} />
+            {
+                carouselData.map((info) => (
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src={info.img} class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt={info.h}>
+                        
+                        <div class="absolute bg-black bg-opacity-50 w-full h-full">
+                            <div class="texto-carousel absolute top-[50%] left-[50%] flex flex-col items-center text-white w-3/4 gap-2">
+                                <ContentCarousel h={info.h} p={info.p} href={info.href} />
+                            </div>
                         </div>
                     </div>
-                </div>
-            ))}
+                ))
+            }
         </div>
 
         <!-- Controles del carrusel -->
