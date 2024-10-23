@@ -1,5 +1,20 @@
 ---
 import CardEventos from "./CardEventos.astro";
+
+const infoEventos = [
+    {
+        fecha: "23 de octubre",
+        evento: "Día de la biblioteca escolar "
+    },
+    {
+        fecha: "27 de octubre",
+        evento: "Día de las manipuladoras de alimentos",
+    },
+    {
+        fecha: "02 de noviembre",
+        evento: "Día internacional contra la violencia y el acoso en la escuela, incluido el ciberacoso."
+    }
+]
 ---
 
 <div class="container flex flex-col lg:flex-row items-center lg:items-start lg:justify-between gap-4">
@@ -8,10 +23,11 @@ import CardEventos from "./CardEventos.astro";
     </div>
     <div class="der flex flex-col gap-4 font-semibold">
         <h2 class="font-bold text-2xl">Próximos Eventos</h2>
-        <CardEventos fecha="26 de septiembre" evento="Día Mundial de la prevención del embarazo no planificado en la adolescencia."/>
-        <CardEventos fecha="01 de octubre" evento="Día de Asistentes de la Educación."/>
-        <CardEventos fecha="04 de octubre" evento="Día de la música chilena."/>
-        <CardEventos fecha="10 de octubre" evento="Día mundial de las salud mental."/>
+        {
+            infoEventos.map((info) => (
+                <CardEventos fecha={info.fecha} evento={info.evento} />
+            ))
+        }
         
     </div>
 </div>
