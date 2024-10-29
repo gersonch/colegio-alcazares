@@ -1,5 +1,11 @@
 export const carouselData = [
   {
+    h: "Reyes Alianzas",
+    p: "Fotos oficiales de los reyes de Alianzas",
+    href: "https://www.flickr.com/photos/200544313@N07/albums/72177720321567012/",
+    img: "/reyes-alianzas.jpg",
+  },
+  {
     h: "Actividad para el 3°A y 3°B",
     p: "El objetivo de esta actividad para el 3°A y 3°B en la asignatura de Historia, Geografía y Ciencias Sociales a cargo de las profesoras Nicole Barriga González y Carolina Martínez Domarchi, fue plasmar fielmente construcciones y paisajes urbanos mostrando en escala menor el realismo romano y el cultivo del conocimiento con la apreciación del arte convertido en un objetivo digno de los logros de la antigua Roma.",
     href: "https://www.flickr.com/photos/200544313@N07/albums/72177720321430659",
@@ -28,11 +34,5 @@ export const carouselData = [
     p: "El pasado viernes disfrutamos de un momento muy especial durante la celebración del Día del Asistente. Fue una jornada llena de alegría y reconocimiento, donde compartimos gratos instantes que reflejaron el aprecio y la dedicación de todos los asistentes.",
     href: "https://www.flickr.com/photos/200544313@N07/albums/72177720320986941",
     img: "/dia-del-asistente.webp",
-  },
-  {
-    h: "Simulacro Regional de Sismo",
-    p: "El día de hoy 03 de octubre, se llevó  a cabo en nuestro Establecimiento el Simulacro Regional de Sismo, en donde se puso en práctica nuestro Plan Integral de Seguridad Escolar.",
-    href: "https://www.flickr.com/photos/200544313@N07/albums/72177720320842366",
-    img: "/sismo.webp",
   },
 ];
