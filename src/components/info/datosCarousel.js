@@ -1,5 +1,11 @@
 export const carouselData = [
   {
+    h: "Visita al Banco",
+    p: "",
+    href: "https://www.flickr.com/photos/200544313@N07/albums/72177720321816194/",
+    img: "/banco.webp",
+  },
+  {
     h: "Zumbaton",
     p: "",
     href: "https://www.flickr.com/photos/200544313@N07/albums/72177720321796701",
@@ -28,11 +34,5 @@ export const carouselData = [
     p: "Los estudiantes de segundo básico finalizaron la unidad sobre pueblos originarios creando maquetas que representaban aspectos clave de distintas culturas indígenas.  Durante el proceso, los niños demostraron gran creatividad y trabajo en equipo, investigando y aprendiendo sobre las costumbres y tradiciones de las comunidades.",
     href: "https://www.flickr.com/photos/200544313@N07/albums/72177720321284545/",
     img: "/dia-salud-mental.webp",
-  },
-  {
-    h: "Exposición Segundo Básico",
-    p: "Celebramos el Día de la Salud Mental en nuestro colegio creando el Árbol de la Salud Mental. Los estudiantes en compañía de la dupla psicosocial participaron escribiendo en hojas sus experiencias y acciones que les ayudan a sentirse mejor y a cuidar su bienestar emocional",
-    href: "https://www.flickr.com/photos/200544313@N07/albums/72177720321277569/",
-    img: "/expo-segundo.webp",
   },
 ];
