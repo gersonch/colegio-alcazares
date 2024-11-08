@@ -1,5 +1,11 @@
 export const carouselData = [
   {
+    h: "Zumbaton",
+    p: "",
+    href: "https://www.flickr.com/photos/200544313@N07/albums/72177720321796701",
+    img: "/zumbaton.webp",
+  },
+  {
     h: "Reyes Alianzas",
     p: "Fotos oficiales de los reyes de Alianzas",
     href: "https://www.flickr.com/photos/200544313@N07/albums/72177720321567012/",
@@ -28,11 +34,5 @@ export const carouselData = [
     p: "Celebramos el Día de la Salud Mental en nuestro colegio creando el Árbol de la Salud Mental. Los estudiantes en compañía de la dupla psicosocial participaron escribiendo en hojas sus experiencias y acciones que les ayudan a sentirse mejor y a cuidar su bienestar emocional",
     href: "https://www.flickr.com/photos/200544313@N07/albums/72177720321277569/",
     img: "/expo-segundo.webp",
-  },
-  {
-    h: "Dia del Asistente",
-    p: "El pasado viernes disfrutamos de un momento muy especial durante la celebración del Día del Asistente. Fue una jornada llena de alegría y reconocimiento, donde compartimos gratos instantes que reflejaron el aprecio y la dedicación de todos los asistentes.",
-    href: "https://www.flickr.com/photos/200544313@N07/albums/72177720320986941",
-    img: "/dia-del-asistente.webp",
   },
 ];
