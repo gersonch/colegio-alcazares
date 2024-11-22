@@ -1,5 +1,11 @@
 export const carouselData = [
   {
+    h: "Licenciatura 2024",
+    p: "Vivimos un momento emocionante y especial, en el cual nuestro querido cuarto medio celebra su ceremonia de licenciatura.",
+    href: "https://www.flickr.com/photos/200544313@N07/albums/72177720322104435",
+    img: "/licenciatura.webp",
+  },
+  {
     h: "Visita al Banco",
     p: "",
     href: "https://www.flickr.com/photos/200544313@N07/albums/72177720321816194/",
@@ -28,11 +34,5 @@ export const carouselData = [
     p: "Hoy lunes 21 de octubre  Reconociendo el patio de educación básica junto a sus educadoras y asistentes.",
     href: "https://www.flickr.com/photos/200544313@N07/albums/72177720321410534",
     img: "/kinder.webp",
-  },
-  {
-    h: "Dia de la Salud Mental",
-    p: "Los estudiantes de segundo básico finalizaron la unidad sobre pueblos originarios creando maquetas que representaban aspectos clave de distintas culturas indígenas.  Durante el proceso, los niños demostraron gran creatividad y trabajo en equipo, investigando y aprendiendo sobre las costumbres y tradiciones de las comunidades.",
-    href: "https://www.flickr.com/photos/200544313@N07/albums/72177720321284545/",
-    img: "/dia-salud-mental.webp",
   },
 ];
